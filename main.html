@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Chore-Board</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css" type="text/css">
+
+ </head>
+ <body>
+
+<div class="container">
+   <div class="row">
+     <div class="title">
+   <h1 id="choreBoardTitle"> ChoreBoard </h1>
+       <p>Welcome to ChoreBoard! Add to-do tasks that need to be done around the house easily. To remove tasks that have been completed, simply click on the task and it will fade away.</p>
+   </div>
+  </div>
+
+<div class="row">
+
+   <div class="col-md-2 text-center, member-sidebar">
+     <h1> Members </h1>
+     <br/>
+     <div id="ethel-user">
+       <img src = "img/ethel.png">
+       <p> Ethel </p>
+     </div>
+     <div id="tyshawnuser">
+       <img src = "img/tyshawn.png">
+       <p> Tyshawn </p>
+     </div>
+     <div id="demarcoUser">
+       <img src = "img/demarco.png">
+       <p> DeMarco </p>
+     </div>
+     <div id="suzyUser">
+       <img src = "img/suzy.png">
+       <p> Suzy </p>
+     </div>
+   </div>
+<div class="lists">
+  <div class="col-md-4 text-center">
+    <div class="cleaningBoard">
+     <h1> Cleaning </h1>
+      <br/>
+      <ol></ol>
+   </div>
+  </div>
+
+  <div class="col-md-4 text-center">
+    <div class="shoppingBoard">
+     <h1> Shopping </h1>
+      <br/>
+      <ol></ol>
+   </div>
+  </div>
+  </div>
+  <div class="col-md-2 text-center updateSidebar">
+     <h1> Updates </h1>
+    <br/>
+    <ol></ol>
+   </div>
+  </div>
+
+</div>
+
+
+  <div class="row">
+   <div class="col-md-offset-2 col-md-8 text-center textBox">
+     <h1> Add a new task . . . </h1>
+     <select class="selection">
+       <option value= 0>Select Type</option>
+       <option value= 1>Cleaning</option>
+       <option value= 2>Shopping</option>
+     </select>
+      <input type="text" id="task" name="task-text">
+      <button id="text-enter">Enter</button>
+    </div>
+   </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+   <script src="script.js"> </script>
+
+ </body>
+</html>

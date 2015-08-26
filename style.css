@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Sofia);
+@import url(http://fonts.googleapis.com/css?family=Just+Another+Hand);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+*{
+  outline: none;
+}
+body{
+  display : 100%;
+/*   background-color: #7FDA89; */
+  background-color: #8EB2C5;
+}
+.loginTitle{
+  font-family: 'Sofia', cursive;
+  color:white;
+
+}
+
+.loginTitle h1{
+  font-size : 90px;
+}
+
+.loginTitle #logo img{
+  width : 100px;
+  height : auto;
+}
+
+.mainPane{
+  text-align: center;
+}
+#user{
+  border: solid 2px #535353;
+}
+#password{
+  border: solid 2px #535353;
+}
+button{
+    background: #5CACC4;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 150%;
+    color: white;
+  border-radius: 50px;
+  width: 75px;
+  font-size: 120%;
+
+}
+button:hover, button:focus {
+     background: gray;
+}
+button:active{
+  border: none;
+
+}
+.member-sidebar img{
+  width : 85px;
+  height : auto;
+  margin-bottom : 1.5em;
+  width: 40%;
+  height : auto;
+}
+
+.member-sidebar{
+  border : solid;
+  border-color : white;
+}
+
+.cleaningBoard{
+  border : solid;
+  border-color : white;
+}
+
+.shoppingBoard{
+  border : solid;
+  border-color : white;
+}
+
+.updateSidebar{
+ border : solid;
+ border-color : white;
+}
+
+h1{
+  font-family: 'Sofia', cursive;
+  color : white;
+}
+
+.member-sidebar p{
+  color : gray;
+  font-family : 'Sofia', cursive;
+  display : inline-block;
+  font-size : 15px;
+}
+
+.title h1{
+  text-align : center;
+  font-size : 50px;
+  margin-top : 0.2em;
+  margin-bottom : 0.3em;
+}
+.login input{
+
+  font-family: 'Josefin Sans', sans-serif;
+  size: 200%;
+}
+.lists p{
+  font-family: 'Josefin Sans', sans-serif;
+  color: gray;
+}
+.selection{
+   background: #5CACC4;
+   width: 120px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: solid 1px #2A4E77;
+   border-radius: 0;
+   height: 29px;
+   -webkit-appearance: none;
+  font-family: 'Josefin Sans', sans-serif;
+  border-radius: 25px;
+  padding-left: 20px;
+  color: white;
+   }
+#choreBoardTitle{
+  text-decoration: underline;
+}
+
+li{
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  font-size : 20px;
+  text-align : left;
+}
+
+.title p{
+  text-align : center;
+  font-family : 'Sofia', cursive;
+  color : white;
+}
