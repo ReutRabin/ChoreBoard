@@ -3,25 +3,40 @@
  <head>
   <meta charset="UTF-8">
   <title>Chore-Board</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css" type="text/css">
  </head>
  <body>
-  <div class="container">
+<div class="container">
    <div class="mainPane">
-    <div class="loginTitle">
-      <h1> Welcome Home! </h1>
+      <div class="loginTitle">
+        <h1> Welcome Home! </h1>
       <div id="logo">
         <img src="img/icon.png">
       </div>
       <h2> Log In </h2>
     </div>
+
     <div class="login">
       <input type="text" id="user" placeholder="Username: ">
       <input type="password" id="password" placeholder="Password: ">
       <button id="loginBtn">Enter</button>
     </div>
-   </div>
-   </div>
+
+     <br/>
+     <div class="row">
+     <div class="downloader col-md-offset-4 col-md-4">
+        <div class="downloading-progress">
+        <div class="downloading-progress-bar" data-value="0" data-max="100"></div>
+    </div>
+    <div class="percentage"></div>
+  </div>
+     </div>
+
+</div>
+
+</div>
+
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
    <script src="script.js"> </script>
