@@ -14,9 +14,9 @@ $(document).ready(function(){
 
        function modifValues(){
          var val = $('.downloading-progress-bar').attr('data-value');
-         if(val>=100){window.location = "/main.html";}
          var newVal = val*1+0.5;
          var txt = Math.floor(newVal)+'%';
+         if(val==100){window.location = "/main.html";}
          $('.downloading-progress-bar').attr('data-value',newVal);
          $('.percentage').html(txt);
          $('.downloading-progress-bar').css("width", txt);
@@ -59,11 +59,13 @@ var currentUser = $("#user").val();
   $("#task").keyup(function(event){
     if(event.keyCode == 13){
         $("#text-enter").click();
+      $("#task").val("");
     }
 });
   $("#password").keyup(function(event){
     if(event.keyCode == 13){
         $("#loginBtn").click();
+      $("#task").val("");
     }
 });
 

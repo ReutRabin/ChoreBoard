@@ -93,7 +93,7 @@ h1{
 }
 
 .member-sidebar p{
-  color : gray;
+  color : #555555;
   font-family : 'Sofia', cursive;
   display : inline-block;
   font-size : 15px;
@@ -110,10 +110,10 @@ h1{
   font-family: 'Josefin Sans', sans-serif;
   size: 200%;
 }
+
 .lists p{
   font-family: 'Josefin Sans', sans-serif;
-  color: gray;
-
+  color: #555555;
 }
 
 .selection{
@@ -180,15 +180,7 @@ background: #5CACC4;
   margin: 0 0 0 10px;
 }
 
-.cleaningBoard li{
-  cursor : cell;
-  font-family: 'Josefin Sans', sans-serif;
-  color: white;
-  font-size : 20px;
-  text-align : left;
-}
-
-.shoppingBoard li{
+li{
   cursor : crosshair;
   font-family: 'Josefin Sans', sans-serif;
   color: white;
@@ -197,9 +189,24 @@ background: #5CACC4;
 }
 
 .updateSidebar li{
-  text-align : left;
-  font-family: 'Josefin Sans', sans-serif;
-  color: white;
   font-size : 15px;
-  text-align : left;
+  color : #555555;
+}
+
+footer{
+  position : fixed;
+  left : 37%;
+  text-align : center;
+  margin-top : 20em;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #555555;
+}
+
+#main-footer{
+  position : fixed;
+  left : 37%;
+  text-align : center;
+  margin-top : 1em;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #555555;
 }
