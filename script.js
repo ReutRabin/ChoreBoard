@@ -9,7 +9,7 @@ $(document).ready(function(){
     Parse.User.logOut();
     window.location = "/ChoreBoard"
   });
-  
+
 
   var passwords = {'ethel': 1211, 'tyshawn': 1213, 'DeMarco': 1213, 'suzy': 1214};
 
@@ -24,7 +24,7 @@ $(document).ready(function(){
          var val = $('.downloading-progress-bar').attr('data-value');
          var newVal = val*1+0.5;
          var txt = Math.floor(newVal)+'%';
-         if(val==100){window.location = "/ChoreBoard/main.html";}
+         if(val==100){window.location = "/main.html";}
          $('.downloading-progress-bar').attr('data-value',newVal);
          $('.percentage').html(txt);
          $('.downloading-progress-bar').css("width", txt);
