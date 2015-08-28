@@ -1,15 +1,22 @@
 var textInput
 
-$(document).ready(function(){
-  //main page login function
-  var passwords = {'ethel': 1211, 'tyshawn': 1213, 'DeMarco': 1213, 'suzy': 1214};
+Parse.initialize("BzMNaRxNdLPjdFFHO9ie8LRR7ZJjLxKLYqfIBMlr", "UT5aDxsOE1PiMmH8DWYtOv3Vijvod7ERYSdIMTPk");
 
+$(document).ready(function(){
   $('.downloader').hide();
 
+  $("#logoutButton").click(function(){
+    Parse.User.logOut();
+    window.location = "/index.html"
+  });
+
+  var passwords = {'ethel': 1211, 'tyshawn': 1213, 'DeMarco': 1213, 'suzy': 1214};
+
+  //main page login function
+
   $(".login #loginBtn").click(function(){
-    inputuser = $("#user").val();
-    inputpassword = $("#password").val();
-     if(inputpassword == passwords[inputuser]){
+    Parse.User.logIn($("#user").val(), $("#password").val(), {
+      success: function(user){
        $('.downloader').show();
 
        function modifValues(){
@@ -20,12 +27,14 @@ $(document).ready(function(){
          $('.downloading-progress-bar').attr('data-value',newVal);
          $('.percentage').html(txt);
          $('.downloading-progress-bar').css("width", txt);
+         //console.log(Parse.User.current()["attributes"]["username"]);
        }
        setInterval(function(){ modifValues(); },10);
-     }
-    else{
-      alert("Wrong password!");
-    }
+      },
+      error: function(user,error){
+        alert("Wrong password!");
+      }
+    });
   });
 
 var currentUser = $("#user").val();
